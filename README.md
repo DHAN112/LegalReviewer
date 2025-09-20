@@ -86,4 +86,4 @@ This hackathon prototype serves as a strong foundation for a more comprehensive 
     * **LinkedIn:** `` https://www.linkedin.com/in/dhanashree-ambure-6164b1310/```
 * **Rutuja Ghodake**
 * **Sakshi Chougule**
-* **Nupur Meghdoot**
+* **Nupoor Mhadgut**
