@@ -9,34 +9,32 @@ st.set_page_config(
     initial_sidebar_state="auto"
 )
 
-# --- Custom CSS for Vibrant & Professional Styling ---
+# --- Custom CSS for Final Polished UI ---
 st.markdown("""
 <style>
     /* Gradient background for the entire page */
     .stApp {
         background-image: linear-gradient(170deg, #EBF5FB 0%, #D6EAF8 100%);
-        color: #2C3E50; /* Default text color */
     }
 
-    /* Main container for inputs and results - the white card */
+    /* Main container card for inputs and results */
     .main-container {
         background-color: #FFFFFF;
         border-radius: 15px;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-        padding: 2em;
-        margin-top: 20px;
-        z-index: 1;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        padding: 2.5em 2em;
+        margin-top: -80px;  /* This pulls the card up under the header */
         position: relative;
+        z-index: 1;
     }
 
     /* Header with the vibrant blue gradient */
     .header {
         background-image: linear-gradient(90deg, #3498DB 0%, #2980B9 100%);
-        padding: 3em 1em;
+        padding: 4em 1em;
         border-radius: 15px;
         color: white;
         text-align: center;
-        margin-bottom: -50px; /* Pull the main container up */
         position: relative;
         z-index: 2;
     }
@@ -56,11 +54,9 @@ st.markdown("""
     }
 
     /* Input field labels */
-    label {
+    label[data-baseweb="label"] {
         color: #2C3E50 !important;
-        font-size: 1.1em;
-        font-weight: 600;
-        margin-bottom: 0.5em;
+        font-weight: 600 !important;
     }
 
     /* Text input and text area styling */
@@ -68,38 +64,39 @@ st.markdown("""
         background-color: #F8F9FA;
         border: 1px solid #BDC3C7;
         border-radius: 8px;
-        color: #34495E;
-    }
-    
-    /* Primary Button styling */
-    .stButton>button.primary {
-        background-color: #3498DB;
-        color: #FFFFFF;
-        border: none;
-        border-radius: 8px;
-        padding: 12px 0;
-        font-weight: bold;
-        font-size: 1.1em;
-        transition: background-color 0.3s ease;
-    }
-    .stButton>button.primary:hover {
-        background-color: #2980B9;
     }
 
-    /* Secondary Button styling */
-    .stButton>button:not(.primary) {
-        background-color: #ECF0F1;
-        color: #7F8C8D;
-        border: 1px solid #BDC3C7;
-        padding: 12px 0;
-        font-weight: bold;
-        font-size: 1.1em;
-        transition: all 0.3s ease;
+    /* --- BUTTON STYLING FIX --- */
+    /* This targets the buttons more specifically to override defaults */
+    .stButton > button {
+        border-radius: 8px !important;
+        padding: 12px 0 !important;
+        font-weight: bold !important;
+        font-size: 1.1em !important;
+        transition: all 0.3s ease !important;
+        border: none !important;
     }
-    .stButton>button:not(.primary):hover {
-        background-color: #BDC3C7;
-        color: #FFFFFF;
+    
+    /* Primary Button - Analyze */
+    button[kind="primary"] {
+        background-color: #3498DB !important; /* Vibrant blue */
+        color: white !important;
     }
+    button[kind="primary"]:hover {
+        background-color: #2980B9 !important; /* Darker blue */
+    }
+
+    /* Secondary Button - Start Over */
+    button[kind="secondary"] {
+        background-color: #ECF0F1 !important; /* Light gray */
+        color: #7F8C8D !important;
+        border: 1px solid #BDC3C7 !important;
+    }
+    button[kind="secondary"]:hover {
+        background-color: #BDC3C7 !important;
+        color: #FFFFFF !important;
+    }
+    /* --- END OF BUTTON FIX --- */
 
     /* Styling for Skill Gaps and Roadmap */
     .skill-gap-item {
@@ -126,22 +123,13 @@ st.markdown("""
         border-radius: 8px;
         color: #145A32;
     }
-    .project-idea h4 {
-        color: #145A32;
-        margin-bottom: 0.5em;
-    }
 
 </style>
 """, unsafe_allow_html=True)
 
-# --- ✨ DYNAMIC HELPER FUNCTIONS (AI Logic Simulation) ---
+# --- Helper Functions (AI Logic Simulation) ---
 def get_skill_gap_from_ai(current_skills, desired_role):
-    """
-    Simulates an AI call for skill gap analysis.
-    This function now uses the user's input to create generalized gaps.
-    """
     time.sleep(1.5)
-    # The f-string (f"...") allows us to insert variables like desired_role directly into the text.
     gaps = [
         f"Advanced proficiency in frameworks and tools specific to a **{desired_role}**.",
         f"A portfolio of projects demonstrating skills beyond the ones listed: '{current_skills}'.",
@@ -151,13 +139,7 @@ def get_skill_gap_from_ai(current_skills, desired_role):
     return gaps
 
 def get_roadmap_from_ai(desired_role):
-    """
-    Simulates an AI call for generating a roadmap.
-    This function now uses the user's input to create a generalized roadmap.
-    """
     time.sleep(1)
-    
-    # Simple logic to suggest a different project type based on keywords
     project_suggestion = f"Build an end-to-end project that showcases the typical workflow of a **{desired_role}**. Document the process and host the code on GitHub to demonstrate your capabilities."
     if 'data' in desired_role.lower() or 'analyst' in desired_role.lower():
         project_suggestion = f"Analyze a complex dataset related to an industry you're passionate about. Create a detailed report and an interactive dashboard to showcase the typical workflow of a **{desired_role}**."
@@ -194,13 +176,13 @@ st.markdown('<div class="main-container">', unsafe_allow_html=True)
 st.markdown("<h2>Your Career Path Input</h2>", unsafe_allow_html=True)
 
 current_skills = st.text_area(
-    "**Your Current Skills & Experience**",
+    "Your Current Skills & Experience",
     height=150,
     placeholder="e.g., Python, SQL, Tableau, project management"
 )
 
 desired_role = st.text_input(
-    "**Your Desired Career Goal**",
+    "Your Desired Career Goal",
     placeholder="e.g., Machine Learning Engineer, UI/UX Designer, Full-Stack Developer"
 )
 
@@ -211,7 +193,7 @@ with col1:
         if current_skills and desired_role:
             with st.spinner('Analyzing your profile and generating your roadmap...'):
                 skill_gaps = get_skill_gap_from_ai(current_skills, desired_role)
-                roadmap = get_roadmap_from_ai(desired_role) # Pass desired_role here
+                roadmap = get_roadmap_from_ai(desired_role)
                 st.session_state.results = {"gaps": skill_gaps, "roadmap": roadmap}
             st.success('✅ Analysis Complete!')
             st.balloons()
@@ -220,7 +202,8 @@ with col1:
 
 with col2:
     if st.session_state.results:
-        if st.button("Start Over", use_container_width=True):
+        # Use type="secondary" for more specific CSS targeting
+        if st.button("Start Over", use_container_width=True, type="secondary"):
             st.session_state.results = None
             st.rerun()
 
