@@ -79,7 +79,7 @@ st.markdown("""
     
     /* Primary Button - Analyze */
     button[kind="primary"] {
-        background-color: #3498DB !important; /* Vibrant blue */
+        background-color: #7FBF00 !important; /* Vibrant blue */
         color: white !important;
     }
     button[kind="primary"]:hover {
