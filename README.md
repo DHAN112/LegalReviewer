@@ -84,6 +84,10 @@ This hackathon prototype serves as a strong foundation for a more comprehensive 
 * **Dhanashree Ambure** #Leader 
     * **GitHub:** `DHAN112`
     * **LinkedIn:** `` https://www.linkedin.com/in/dhanashree-ambure-6164b1310/```
-* **Rutuja Ghodake**
+* **Rutuja Ghodke**
+   * **GitHub:** `RutujaGhodke-02 `
+    * **LinkedIn:** ``https://www.linkedin.com/in/rutuja-ghodke-786bb8320/``
 * **Sakshi Chougule**
 * **Nupoor Mhadgut**
+   * **GitHub:** `Nupoor-Satish-Mhadgut `
+    * **LinkedIn:** ``https://www.linkedin.com/in/nupoor-mhadgut-65102b2a8/ ``
