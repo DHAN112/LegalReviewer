@@ -10,7 +10,7 @@ An AI-powered advisor that transforms career uncertainty into an actionable plan
 
 You can access the live working prototype of the application here:
 
-**[https://your-streamlit-app-url.streamlit.app/](https://your-streamlit-app-url.streamlit.app/)**
+**https://personalized-career-engine-ww2butfkroeykxbzmeqwrr.streamlit.app/**
 
 ---
 
