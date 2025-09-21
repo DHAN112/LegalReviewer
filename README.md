@@ -1,8 +1,8 @@
 # 🧭 Career Compass AI
 
-An AI-powered advisor that transforms career uncertainty into an actionable plan, using generative AI to instantly bridge the gap between your current skills and your dream job.
+An AI-powered advisor that transforms career uncertainty into an actionable plan, using generative AI to instantly bridge the gap between your current skills and your dream job. 
 
-**This project was created for the Gen AI Exchange Hackathon - September 2025.**
+**This project was created by Team AI Squad for the Gen AI Exchange Hackathon.**
 
 ---
 
@@ -10,40 +10,31 @@ An AI-powered advisor that transforms career uncertainty into an actionable plan
 
 You can access the live working prototype of the application here:
 
-**https://407788d9-7d6d-4dd3-a93f-26e0f2197eb2-00-38kwq2twd77mh.riker.replit.dev/**
+**[https://your-streamlit-app-url.streamlit.app/](https://your-streamlit-app-url.streamlit.app/)**
 
 ---
 
 ### ## 🎯 The Problem
 
-In today's rapidly evolving job market, professionals and students face significant uncertainty. They struggle to identify the specific skills needed to transition into their desired careers and lack a clear, actionable plan to acquire them. Generic advice is often unhelpful, while personal career coaching is expensive and inaccessible. This leads to wasted time, misdirected effort, and significant career anxiety.
+In today's rapidly evolving job market, professionals and students face significant uncertainty. They struggle to identify the specific skills needed to transition into their desired careers and lack a clear, actionable plan to acquire them. Generic advice is often unhelpful, while personal career coaching can be expensive and inaccessible.
 
 ### ## ✨ Our Solution
 
-**Career Compass AI** is a web-based, personalized career and skill advisor that provides a clear and immediate path forward. Our platform leverages the power of a large language model to provide two core features:
-
-1.  **AI-Powered Skill Gap Analysis:** Users input their current skills and desired career goal. Our AI analyzes this to instantly identify the critical skills and knowledge they are missing.
-2.  **Personalized Learning Roadmap:** Based on the identified gaps, the platform generates a custom, step-by-step learning roadmap, complete with key topics to master and practical project ideas to build a strong portfolio.
-
-We don't just show you the problem; we generate the solution.
-
----
+**Career Compass AI** is a web-based, personalized career and skill advisor that provides a clear and immediate path forward. Our platform leverages the power of a large language model to perform a precise **Skill Gap Analysis** and generate a bespoke **Personalized Learning Roadmap**, complete with topics to master and practical project ideas. We don't just show you the problem; we generate the solution.
 
 ### ## 🚀 Key Features
 
-* **Simple & Intuitive UI:** A clean, single-page interface that requires no signup.
-* **Natural Language Input:** Users can describe their experience and goals in their own words.
-* **Instantaneous Analysis:** Get a complete skill gap analysis in seconds.
-* **Actionable & Structured Roadmap:** The output is not just a list of skills, but a logical plan with topics and project ideas to get started immediately.
+**Simple & Intuitive UI:** A clean, single-page interface that requires no signup. 
+**Natural Language Input:** Users can describe their experience and goals in their own words. 
+**Instantaneous Analysis:** Get a complete skill gap analysis in seconds.**Actionable & Structured Roadmap:** The output is a logical plan with topics and project ideas to get started immediately.
 
 ---
 
 ### ## 💻 Technology Stack
 
-* **Backend:** Python, Flask
-* **Frontend:** HTML, CSS
-* **Core AI Engine:** Designed for integration with a generative AI (LLM) API.
-* **Platform:** Hosted and developed on Replit.
+**Backend & Frontend Framework:** Python with **Streamlit**
+**Core AI Engine:** Designed for integration with a Generative AI (LLM) API 
+**Platform:** Hosted on **Streamlit Community Cloud**
 
 ---
 
@@ -60,12 +51,10 @@ We don't just show you the problem; we generate the solution.
 ### ## 📸 Screenshots
 
 #### Main Application Interface
-<img width="933" height="872" alt="image" src="https://github.com/user-attachments/assets/3c814d11-809a-4637-8b40-8e21564c5b7e" />
+<img width="897" height="776" alt="image" src="https://github.com/user-attachments/assets/7904119b-9d19-4ae4-b4c1-212952035a8c" />
 
-
-#### Example of a Generated Roadmap
-<img width="926" height="675" alt="image" src="https://github.com/user-attachments/assets/3e4c17d0-6e38-4966-9d94-299123c0ef37" />
-
+#### Example of a Generated Analysis
+<img width="708" height="784" alt="image" src="https://github.com/user-attachments/assets/73d5fb48-75e8-4a39-98f5-c8b7a2539456" />
 
 ---
 
@@ -79,15 +68,18 @@ This hackathon prototype serves as a strong foundation for a more comprehensive 
 
 ---
 
-### ## 🧑‍💻 Team Members
+### ## 🧑‍💻 Team AI Squad
 
-* **Dhanashree Ambure** #Leader 
+* **Dhanashree Ambure** (Team Leader)
     * **GitHub:** `DHAN112`
-    * **LinkedIn:** `` https://www.linkedin.com/in/dhanashree-ambure-6164b1310/```
-* **Rutuja Ghodke**
-   * **GitHub:** `RutujaGhodke-02 `
-    * **LinkedIn:** ``https://www.linkedin.com/in/rutuja-ghodke-786bb8320/``
+    * **LinkedIn:** `https://www.linkedin.com/in/dhanashree-ambure-6164b1310/`
+* **Rutuja Ghodake**
+    * **GitHub:** `RutujaGhodke-02`
+    * **LinkedIn:** `https://www.linkedin.com/in/rutuja-ghodke-786bb8320/`
 * **Sakshi Chougule**
-* **Nupoor Mhadgut**
-   * **GitHub:** `Nupoor-Satish-Mhadgut `
-    * **LinkedIn:** ``https://www.linkedin.com/in/nupoor-mhadgut-65102b2a8/ ``
+    * **GitHub:** `02-Sakshi`
+    * **LinkedIn:** `https://www.linkedin.com/in/sakshi-chougule-1b7ab4320?trk=contact-info
+`
+* **Nupoor Mhadgut**
+    * **GitHub:** `Nupoor-Satish-Mhadgut`
+    * **LinkedIn:** `https://www.linkedin.com/in/nupoor-mhadgut-65102b2a8/`
